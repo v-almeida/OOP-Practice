@@ -25,7 +25,30 @@ public class Program {
             System.out.format("%s\n", autor);
         }
 
-        System.out.println("\n======================================================================\n");
+        System.out.println("\n======================================================================");
+
+        // Livro 2 - Java, Como programar
+
+        System.out.println("\nLIVRO 02");
+
+        Livro livro2 = new Livro();
+
+        livro2.codigo = "9865PLO";
+        livro2.titulo = "Java, Como programar";
+        livro2.isbn = "0130341517";
+        livro2.ano = 2015;
+
+        livro2.autores = new String[1];
+        livro2.autores[0] = "Harvey Deitel";
+
+        System.out.format("\nCodigo: %s \nTitulo: %s \nISBN: %s \nAno: %d ", livro2.codigo,
+        livro2.titulo, livro2.isbn, livro2.ano 
+        );
+
+        System.out.print("\nAutores: ");
+        for (String autor : livro2.autores){
+            System.out.format("%s\n\n", autor);
+        }
 
     }
 }

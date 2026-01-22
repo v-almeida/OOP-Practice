@@ -50,5 +50,6 @@ public class Program {
             System.out.format("%s\n\n", autor);
         }
 
+        System.out.println("---------- Program ended ----------\n");
     }
 }

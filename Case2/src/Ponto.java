@@ -19,6 +19,8 @@ Observações:
 
 public class Ponto {
     
+    // 1. Crie um objeto ponto1 usando o primeiro construtor;
+
     double x;
     double y;
 
@@ -27,11 +29,45 @@ public class Ponto {
         y = 0;
     }
 
+    // 2. Crie um objeto ponto2 na posição (2,5);
+
     public Ponto(double x, double y){
 
         this.x = x;
         this.y = y;
     }
 
+    //3. Calcule a distância do ponto1 ao ponto2;
+
+    public double calcularDistancia(Ponto outroPonto){
+
+        double DiferencaX = outroPonto.x - this.x;
+        double DiferencaY = outroPonto.y - this.y;
+
+        double distancia = Math.sqrt(Math.pow(DiferencaX, 2) + Math.pow(DiferencaY, 2));
+
+        return distancia;
+
+    }
+
+    // Getters
+
+    public double getX(){
+        return x;
+    }
+
+    public double getY(){
+        return y;
+    }
+
+    // Setters
+
+    public void setX(double x) {
+        this.x = x;
+    }
+    
+    public void setY(double y){
+        this.y = y;
+    }
 }
 
